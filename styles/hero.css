@@ -32,3 +32,111 @@ nav a {
     text-decoration: none;
     font-weight: 500;
 }
+
+main {
+    display: flex;
+
+    padding: 32px;
+}
+
+.hero-video {
+    flex: 5;
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    max-height: 580px;
+
+    border-radius: 6px;
+    margin-top: 54px;
+}
+
+.hero-info {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-title h1 {
+    font-size: 48px;
+
+    margin-top: 16px;
+}
+
+.hero-title p {
+    font-size: 18px;
+}
+
+.ability-block {
+    max-width: 700px;
+
+    padding: 20px 0;
+}
+
+.ability-title {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 14px;
+    gap: 14px;
+}
+
+.ability-title img {
+    width: 56px;
+    height: 56px;
+
+    border: 2px solid #888;
+}
+
+.ability-text {
+    color: #ccc;
+    line-height: 1.5;
+}
+
+.ability-stats {
+    line-height: 1.5;
+}
+
+.stat-group {
+    padding: 8px 0;
+}
+
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat-row span {
+    color: #ddd;
+    font-size: 18px;
+
+    padding: 0 42px;
+}
+
+.talent-row {
+    display: flex;
+}
+
+.talent-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    width: 300px;
+    height: 60px;
+
+    border-bottom: 1px solid #888;
+}
+
+.talent-level {
+    display: flex;
+    align-items: center;
+
+    font-size: 22px;
+    font-weight: 900;
+
+    padding: 0 32px;
+}
