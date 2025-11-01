@@ -114,6 +114,53 @@ video {
     padding: 0 42px;
 }
 
+.ability-notes {
+    color: #ccc;
+    line-height: 1.5;
+}
+
+.ability-notes-toggle {
+    display: flex;
+    justify-content: center;
+}
+
+.ability-notes-toggle button {
+    color: #e0e0e0;
+    font-size: 16px;
+
+    background: none;
+    border: none;
+
+    padding: 6px 200px;
+}
+
+.ability-notes-toggle button:hover {
+    background-color: #1a1a1a;
+}
+
+.note-group {
+    max-height: 0;
+    opacity: 0;
+
+    transition:
+        max-height  0.3s,
+        opacity     0.3s,
+        padding     0.3s;
+}
+
+.note-group.visible {
+    max-height: 1000px;
+    opacity: 1;
+
+    padding: 8px 0;
+}
+
+.note-group li {
+    list-style-position: inside;
+
+    margin-bottom: 4px;
+}
+
 .talent-row {
     display: flex;
 }
