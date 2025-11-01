@@ -156,9 +156,13 @@ video {
 }
 
 .note-group li {
-    list-style-position: inside;
+    list-style-position: outside;
 
-    margin-bottom: 4px;
+    margin: 4px 16px;
+}
+
+.ability-talent-table {
+    margin-bottom: 18px;
 }
 
 .talent-row {
