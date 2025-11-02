@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>D2MAN</title>
+
+        <link rel="stylesheet" href="../../styles/hero.css">
+    </head>
+    <body>
+        <nav>
+            <a href="nav/heroes.html">Heroes</a>
+            <a href="nav/items.html">Items</a>
+            <a href="nav/creeps.html">Creeps</a>
+            <a href="nav/mechanics.html">Game Mechanics</a>
+            <a href="nav/objectives.html">Map Objectives</a>
+        </nav>
+
+        <main>
+            <div class="hero-video">
+                <video src="../../assets/video/hero/lina/lina.mp4" autoplay muted loop></video>
+            </div>
+
+            <div class="hero-info">
+                <div class="hero-title">
+                    <h1>Lina</h1>
+                    <p>Main Attribute - Intelligence</p>
+                </div>
+
+                <div class="hero-facet">
+                    <div class="facet-group">
+                        <a href="linaA.html">
+                            <img src="../../assets/image/hero/lina/linaA.png" alt="Thermal Runaway">
+                        </a>
+                        <a href="linaB.html">
+                            <img src="../../assets/image/hero/lina/linaB.png" alt="Slow Burn">
+                        </a>
+                    </div>
+
+                    <div class="facet-text">
+                        <p>
+                        Casting Laguna Blade temporarily supercharges Lina, granting her
+                        stacks of Fiery Soul.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ability-block">
+                    <div class="ability-title">
+                        <h2>Base Stats</h2>
+                    </div>
+
+                    <div class="ability-stats">
+                        <div class="stat-group">
+                            <div class="stat-row"><span>Health:</span><span>560 + 2.2</span></div>
+                            <div class="stat-row"><span>Mana:</span><span>435 + 1.5</span></div>
+                        </div>
+                        <div class="stat-group">
+                            <div class="stat-row"><span>Strength:</span><span>20 + 2.4</span></div>
+                            <div class="stat-row"><span>Agility:</span><span>23 + 2.4</span></div>
+                            <div class="stat-row"><span>Intelligence:</span><span>30 + 3.8</span></div>
+                        </div>
+                        <div class="stat-group">
+                            <div class="stat-row"><span>Armor:</span><span>3.8</span></div>
+                            <div class="stat-row"><span>Magic Resistance:</span><span>28%</span></div>
+                        </div>
+                        <div class="stat-group">
+                            <div class="stat-row"><span>Attack Type:</span><span>Ranged</span></div>
+                            <div class="stat-row"><span>Attack Damage:</span><span>51 - 59</span></div>
+                            <div class="stat-row"><span>Base Attack Time:</span><span>1.6</span></div>
+                            <div class="stat-row"><span>Attack Range:</span><span>670</span></div>
+                            <div class="stat-row"><span>Projectile Speed:</span><span>1000</span></div>
+                        </div>
+                        <div class="stat-group">
+                            <div class="stat-row"><span>Movement Speed:</span><span>290</span></div>
+                            <div class="stat-row"><span>Turn Rate:</span><span>0.6</span></div>
+                            <div class="stat-row"><span>Vision Range:</span><span>1800 / 800</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ability-block">
+                    <div class="ability-title">
+                        <img src="../../assets/image/hero/lina/linaQ.png" alt="Dragon Slave">
+                        <h2>Dragon Slave</h2>
+                    </div>
+
+                    <div class="ability-text">
+                        <p>
+                        Lina channels the breath of a dragon, sending out a wave of fire that
+                        scorches every enemy in its path.
+                        </p>
+                    </div>
+
+                    <div class="ability-stats">
+                        <div class="stat-group">
+                            <div class="stat-row"><span>Ability:</span><span>Unit or Point Target</span></div>
+                            <div class="stat-row"><span>Affects:</span><span>Enemy Units</span></div>
+                            <div class="stat-row"><span>Damage Type:</span><span>Magical</span></div>
+                            <div class="stat-row"><span>Pierces Debuff Immunity:</span><span>No</span></div>
+                            <div class="stat-row"><span>Damage:</span><span>85 / 165 / 245 / 325</span></div>
+                            <div class="stat-row"><span>Cooldown:</span><span>11 / 10 / 9 / 8</span></div>
+                            <div class="stat-row"><span>Mana Cost:</span><span>100 / 110 / 120 / 130</span></div>
+                            <div class="stat-row"><span>Range:</span><span>1075</span></div>
+                        </div>
+                    </div>
+
+                    <div class="ability-notes">
+                        <div class="ability-notes-toggle">
+                            <button data-target="Q">Additional Notes</button>
+                        </div>
+
+                        <ul class="note-group" id="Q">
+                            <li>
+                                Dragon Slave can hit units up to 1225 units away.
+                            </li>
+                            <li>
+                                Does not trigger spell block or spell reflect.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="ability-block">
+                    <div class="ability-title">
+                        <img src="../../assets/image/hero/lina/linaW.png" alt="Light Strike Array">
+                        <h2>Light Strike Array</h2>
+                    </div>
+
+                    <div class="ability-text">
+                        <p>
+                        Summons a column of flames that damages and stuns enemies.
+                        </p>
+                    </div>
+
+                    <div class="ability-stats">
+                        <div class="stat-group">
+                            <div class="stat-row"><span>Ability:</span><span>Point Target</span></div>
+                            <div class="stat-row"><span>Damage Type:</span><span>Magical</span></div>
+                            <div class="stat-row"><span>Pierces Debuff Immunity:</span><span>No</span></div>
+                            <div class="stat-row"><span>Dispellable:</span><span>Strong Dispel</span></div>
+                            <div class="stat-row"><span>Radius:</span><span>250</span></div>
+                            <div class="stat-row"><span>Cast Delay:</span><span>0.5</span></div>
+                            <div class="stat-row"><span>Stun Duration:</span><span>1.2 / 1.6 / 2 / 2.4</span></div>
+                            <div class="stat-row"><span>Damage:</span><span>110 / 160 / 210 / 260</span></div>
+                            <div class="stat-row"><span>Cooldown:</span><span>13 / 11 / 9 / 7</span></div>
+                            <div class="stat-row"><span>Mana Cost:</span><span>100 / 110 / 120 / 130</span></div>
+                            <div class="stat-row"><span>Range:</span><span>700</span></div>
+                        </div>
+                    </div>
+
+                    <div class="ability-notes">
+                        <div class="ability-notes-toggle">
+                            <button data-target="W">Additional Notes</button>
+                        </div>
+
+                        <ul class="note-group" id="W">
+                            <li>
+                                Light Strike Array will destroy trees in its area of effect.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="ability-block">
+                    <div class="ability-title">
+                        <img src="../../assets/image/hero/lina/linaE.png" alt="Fiery Soul">
+                        <h2>Fiery Soul</h2>
+                    </div>
+
+                    <div class="ability-text">
+                        <p>
+                        Grants bonus attack and movement speed each time Lina hits an enemy
+                        with a spell. Stacks with itself. Lasts 18 seconds.
+                        </p>
+                    </div>
+
+                    <div class="ability-stats">
+                        <div class="stat-group">
+                            <div class="stat-row"><span>Ability:</span><span>Passive</span></div>
+                            <div class="stat-row"><span>Dispellable:</span><span>No</span></div>
+                            <div class="stat-row"><span>Breakable:</span><span>Yes</span></div>
+                            <div class="stat-row"><span>Attack Speed Bonus:</span><span>8 / 16 / 24 / 32</span></div>
+                            <div class="stat-row"><span>Move Speed Bonus:</span><span>1% / 1.5% / 2% / 2.5%</span></div>
+                            <div class="stat-row"><span>Max Stacks:</span><span>7</span></div>
+                            <div class="stat-row"><span>Duration:</span><span>18</span></div>
+                        </div>
+                    </div>
+
+                    <div class="ability-notes">
+                        <div class="ability-notes-toggle">
+                            <button data-target="E">Additional Notes</button>
+                        </div>
+
+                        <ul class="note-group" id="E">
+                            <li>
+                                Duration refreshes each time an opponent is hit with a spell.
+                            </li>
+                            <li>
+                                Using items does not trigger Fiery Soul.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="ability-block">
+                    <div class="ability-title">
+                        <img src="../../assets/image/hero/lina/linaR.png" alt="Laguna Blade">
+                        <h2>Laguna Blade</h2>
+                    </div>
+
+                    <div class="ability-text">
+                        <p>
+                        Fires off a bolt of lightning at a single enemy unit, dealing massive
+                        damage.
+                        </p>
+                    </div>
+
+                    <div class="ability-stats">
+                        <div class="stat-group">
+                            <div class="stat-row"><span>Ability:</span><span>Unit Target</span></div>
+                            <div class="stat-row"><span>Affects:</span><span>Enemy Units</span></div>
+                            <div class="stat-row"><span>Damage Type:</span><span>Magical</span></div>
+                            <div class="stat-row"><span>Pierces Spell Immunity:</span><span>No</span></div>
+                            <div class="stat-row"><span>Damage:</span><span>500 / 750 / 1000</span></div>
+                            <div class="stat-row"><span>Cooldown:</span><span>70 / 60 / 50</span></div>
+                            <div class="stat-row"><span>Mana Cost:</span><span>150 / 300 / 450</span></div>
+                            <div class="stat-row"><span>Range:</span><span>600</span></div>
+                        </div>
+                    </div>
+
+                    <div class="ability-notes">
+                        <div class="ability-notes-toggle">
+                            <button data-target="R">Additional Notes</button>
+                        </div>
+
+                        <ul class="note-group" id="R">
+                            <li>
+                                Laguna Blade has a 0.25 delay before the damage is applied
+                                (after the spell is cast) allowing certain abilities to avoid
+                                the damage.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="ability-block">
+                    <div class="ability-title">
+                        <img src="../../assets/image/hero/lina/innate.png" alt="Innate">
+                        <h2>Combustion</h2>
+                    </div>
+
+                    <div class="ability-text">
+                        <p>
+                        Every 175 damage Lina does to an enemy hero causes them to overheat,
+                        doing damage to their nearby allies. This effect can trigger multiple
+                        times off a single instance of damage. Overheated illusions do less
+                        damage.
+                        </p>
+                    </div>
+
+                    <div class="ability-stats">
+                        <div class="stat-group">
+                            <div class="stat-row"><span>Levels With:</span><span>Laguna Blade</span></div>
+                            <div class="stat-row"><span>Breakable:</span><span>Yes</span></div>
+                            <div class="stat-row"><span>Damage Type:</span><span>Magical</span></div>
+                            <div class="stat-row"><span>Overheat Damage:</span><span>15 / 35 / 55 / 75</span></div>
+                            <div class="stat-row"><span>Overheat Damage (Illusion):</span><span>10 / 15 / 20 / 25</span></div>
+                            <div class="stat-row"><span>Overheat Radius:</span><span>400</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ability-block">
+                    <div class="ability-title">
+                        <img src="../../assets/image/hero/lina/talents.png" alt="Talents">
+                        <h2>Talents</h2>
+                    </div>
+
+                    <div class="ability-talent-table">
+                        <div class="talent-row">
+                            <span class="talent-item">+150% Crit On Targets Affected By Spells</span>
+                            <span class="talent-level">25</span>
+                            <span class="talent-item">+60% Combustion Overheat Damage</span>
+                        </div>
+                        <div class="talent-row">
+                            <span class="talent-item">+10/1% Fiery Soul Per Stack</span>
+                            <span class="talent-level">20</span>
+                            <span class="talent-item">-20s Laguna Blade Cooldown</span>
+                        </div>
+                        <div class="talent-row">
+                            <span class="talent-item">+150 Light Strike Array Damage</span>
+                            <span class="talent-level">15</span>
+                            <span class="talent-item">5% Fiery Soul Magic Resist Per Stack</span>
+                        </div>
+                        <div class="talent-row">
+                            <span class="talent-item">-3s Dragon Slave Cooldown</span>
+                            <span class="talent-level">10</span>
+                            <span class="talent-item">+25 Damage</span>
+                        </div>
+                    </div>
+
+                    <div class="ability-notes">
+                        <div class="ability-notes-toggle">
+                            <button data-target="TN">Additional Notes</button>
+                        </div>
+
+                        <ul class="note-group" id="TN">
+                            <li>
+                                Level 25 talent (150% Crit) - Only applies to Lina's attacks.
+                                Lasts 3 seconds.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="ability-block">
+                    <div class="ability-title">
+                        <img src="../../assets/image/hero/lina/aghanim.png" alt="Aghanim's Scepter">
+                        <img src="../../assets/image/hero/lina/linaD.png" alt="Flame Cloak">
+                        <h2>New Ability - Flame Cloak</h2>
+                    </div>
+
+                    <div class="ability-text">
+                        <p>
+                        Grants Lina unobstructed movement and increases her spell damage and
+                        magic resistance. Grants max Fiery Soul stacks on activation.
+                        </p>
+                    </div>
+
+                    <div class="ability-stats">
+                        <div class="stat-group">
+                            <div class="stat-row"><span>Ability:</span><span>No Target</span></div>
+                            <div class="stat-row"><span>Dispellable:</span><span>No</span></div>
+                            <div class="stat-row"><span>Duration:</span><span>7</span></div>
+                            <div class="stat-row"><span>Magic Resistance:</span><span>35%</span></div>
+                            <div class="stat-row"><span>Spell Amplification:</span><span>35%</span></div>
+                            <div class="stat-row"><span>Cooldown:</span><span>25</span></div>
+                            <div class="stat-row"><span>Mana Cost:</span><span>50</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ability-block">
+                    <div class="ability-title">
+                        <img src="../../assets/image/hero/lina/aghanim.png" alt="Aghanim's Shard">
+                        <img src="../../assets/image/hero/lina/linaR.png" alt="Laguna Blade">
+                        <h2>Ability Upgrade - Laguna Blade</h2>
+                    </div>
+
+                    <div class="ability-text">
+                        <p>
+                        100% of the damage dealt by Laguna Blade is converted to an all damage
+                        barrier for Lina. Barrier lasts for 10 seconds.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="../../scripts/hero-notes-toggle.js"></script>
+    </body>
+</html>
