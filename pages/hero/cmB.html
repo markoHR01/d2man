@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>D2MAN</title>
+
+        <link rel="stylesheet" href="../../styles/hero.css">
+    </head>
+    <body>
+        <nav>
+            <a href="nav/heroes.html">Heroes</a>
+            <a href="nav/items.html">Items</a>
+            <a href="nav/creeps.html">Creeps</a>
+            <a href="nav/mechanics.html">Game Mechanics</a>
+            <a href="nav/objectives.html">Map Objectives</a>
+        </nav>
+
+        <main>
+            <div class="hero-video">
+                <video src="../../assets/video/hero/cm/cm.mp4" autoplay muted loop></video>
+            </div>
+
+            <div class="hero-info">
+                <div class="hero-title">
+                    <h1>Crystal Maiden</h1>
+                    <p>Main Attribute - Intelligence</p>
+                </div>
+
+                <div class="hero-facet">
+                    <div class="facet-group">
+                        <a href="cmA.html">
+                            <img src="../../assets/image/hero/cm/cmA.png" alt="Glacial Guard">
+                        </a>
+                        <a href="cmB.html">
+                            <img class="on" src="../../assets/image/hero/cm/cmB.png" alt="Arcane Overflow">
+                        </a>
+                    </div>
+
+                    <div class="facet-text">
+                        <p>
+                        Activating Arcane Aura temporarily increases Crystal Maiden's spell
+                        amplification and mana costs. During the duration, Crystal Maiden
+                        restores her own and her allies' mana when casting spells. Does not
+                        affect items. Duration is paused while channeling Freezing Field.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ability-block">
+                    <div class="ability-title">
+                        <h2>Base Stats</h2>
+                    </div>
+
+                    <div class="ability-stats">
+                        <div class="stat-group">
+                            <div class="stat-row"><span>Health:</span><span>494 + 2.0</span></div>
+                            <div class="stat-row"><span>Mana:</span><span>291 + 0.9</span></div>
+                        </div>
+                        <div class="stat-group">
+                            <div class="stat-row"><span>Strength:</span><span>17 + 2.2</span></div>
+                            <div class="stat-row"><span>Agility:</span><span>16 + 1.8</span></div>
+                            <div class="stat-row"><span>Intelligence:</span><span>18 + 3.3</span></div>
+                        </div>
+                        <div class="stat-group">
+                            <div class="stat-row"><span>Armor:</span><span>2.7</span></div>
+                            <div class="stat-row"><span>Magic Resistance:</span><span>26.8%</span></div>
+                        </div>
+                        <div class="stat-group">
+                            <div class="stat-row"><span>Attack Type:</span><span>Ranged</span></div>
+                            <div class="stat-row"><span>Attack Damage:</span><span>48 - 54</span></div>
+                            <div class="stat-row"><span>Base Attack Time:</span><span>1.7</span></div>
+                            <div class="stat-row"><span>Attack Range:</span><span>600</span></div>
+                            <div class="stat-row"><span>Projectile Speed:</span><span>900</span></div>
+                        </div>
+                        <div class="stat-group">
+                            <div class="stat-row"><span>Movement Speed:</span><span>280</span></div>
+                            <div class="stat-row"><span>Turn Rate:</span><span>0.6</span></div>
+                            <div class="stat-row"><span>Vision Range:</span><span>1800 / 800</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ability-block">
+                    <div class="ability-title">
+                        <img src="../../assets/image/hero/cm/cmQ.png" alt="Crystal Nova">
+                        <h2>Crystal Nova</h2>
+                    </div>
+
+                    <div class="ability-text">
+                        <p>
+                        A burst of damaging frost slows enemy movement in the targeted area.
+                        </p>
+                    </div>
+
+                    <div class="ability-stats">
+                        <div class="stat-group">
+                            <div class="stat-row"><span>Ability:</span><span>Point Target</span></div>
+                            <div class="stat-row"><span>Damage Type:</span><span>Magical</span></div>
+                            <div class="stat-row"><span>Pierces Debuff Immunity:</span><span>No</span></div>
+                            <div class="stat-row"><span>Dispellable:</span><span>Yes</span></div>
+                            <div class="stat-row"><span>Radius:</span><span>425</span></div>
+                            <div class="stat-row"><span>Movement Slow:</span><span>20% / 30% / 40% / 50%</span></div>
+                            <div class="stat-row"><span>Attack Slow:</span><span>30 / 45 / 60 / 75</span></div>
+                            <div class="stat-row"><span>Slow Duration:</span><span>4</span></div>
+                            <div class="stat-row"><span>Damage:</span><span>110 / 160 / 210 / 260</span></div>
+                            <div class="stat-row"><span>Cooldown:</span><span>11 / 10 / 9 / 8</span></div>
+                            <div class="stat-row"><span>Mana Cost:</span><span>115 / 135 / 155 / 175</span></div>
+                            <div class="stat-row"><span>Range:</span><span>700</span></div>
+                        </div>
+                    </div>
+
+                    <div class="ability-notes">
+                        <div class="ability-notes-toggle">
+                            <button data-target="Q">Additional Notes</button>
+                        </div>
+
+                        <ul class="note-group" id="Q">
+                            <li>
+                                Crystal Nova provides vision in the targeted area for the
+                                duration.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="ability-block">
+                    <div class="ability-title">
+                        <img src="../../assets/image/hero/cm/cmW.png" alt="Frostbite">
+                        <h2>Frostbite</h2>
+                    </div>
+
+                    <div class="ability-text">
+                        <p>
+                        Encases an enemy unit in ice, prohibiting movement and attack, while
+                        dealing damage over time. Deals 4x damage to non-ancient creeps.
+                        </p>
+                    </div>
+
+                    <div class="ability-stats">
+                        <div class="stat-group">
+                            <div class="stat-row"><span>Ability:</span><span>Unit Target</span></div>
+                            <div class="stat-row"><span>Affects:</span><span>Enemy Units</span></div>
+                            <div class="stat-row"><span>Damage Type:</span><span>Magical</span></div>
+                            <div class="stat-row"><span>Pierces Debuff Immunity:</span><span>No</span></div>
+                            <div class="stat-row"><span>Dispellable:</span><span>Yes</span></div>
+                            <div class="stat-row"><span>Damage Per Second:</span><span>100</span></div>
+                            <div class="stat-row"><span>Duration:</span><span>1.5 / 2 / 2.5 / 3</span></div>
+                            <div class="stat-row"><span>Cooldown:</span><span>9 / 8 / 7 / 6</span></div>
+                            <div class="stat-row"><span>Mana Cost:</span><span>125 / 135 / 145 / 155</span></div>
+                            <div class="stat-row"><span>Range:</span><span>600</span></div>
+                        </div>
+                    </div>
+
+                    <div class="ability-notes">
+                        <div class="ability-notes-toggle">
+                            <button data-target="W">Additional Notes</button>
+                        </div>
+
+                        <ul class="note-group" id="W">
+                            <li>
+                                Frostbite is considered a root.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="ability-block">
+                    <div class="ability-title">
+                        <img src="../../assets/image/hero/cm/cmE.png" alt="Arcane Aura">
+                        <h2>Arcane Aura</h2>
+                    </div>
+
+                    <div class="ability-text">
+                        <p>
+                        Gives additional mana regeneration to all friendly units on the map.
+                        Allies within a 1200 radius of Crystal Maiden receive 3x the mana
+                        regeneration.
+                        </p>
+                    </div>
+
+                    <div class="ability-stats">
+                        <div class="stat-group">
+                            <div class="stat-row"><span>Ability:</span><span>Passive</span></div>
+                            <div class="stat-row"><span>Affects:</span><span>Allies</span></div>
+                            <div class="stat-row"><span>Pierces Debuff Immunity:</span><span>Yes</span></div>
+                            <div class="stat-row"><span>Breakable:</span><span>Yes</span></div>
+                            <div class="stat-row"><span>Mana Ragen:</span><span>0.4 / 0.6 / 0.8 / 1</span></div>
+                            <div class="stat-row"><span>Close Mana Regen:</span><span>1.2 / 1.8 / 2.4 / 3</span></div>
+                            <div class="stat-row"><span>Radius:</span><span>1200</span></div>
+                        </div>
+                    </div>
+
+                    <div class="ability-notes">
+                        <div class="ability-notes-toggle">
+                            <button data-target="E">Additional Notes</button>
+                        </div>
+
+                        <ul class="note-group" id="E">
+                            <li>
+                                <strong>Arcane Overflow (Facet):</strong> With Aghanim's
+                                scepter, cannot be activated while channeling Freezing
+                                Field.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="ability-block">
+                    <div class="ability-title">
+                        <img src="../../assets/image/hero/cm/cmR.png" alt="Freezing Field">
+                        <h2>Freezing Field</h2>
+                    </div>
+
+                    <div class="ability-text">
+                        <p>
+                        Channeled - Surrounds Crystal Maiden with 100 random icy explosions
+                        that slow enemies and deal massive damage. Lasts 10 seconds.
+                        </p>
+                    </div>
+
+                    <div class="ability-stats">
+                        <div class="stat-group">
+                            <div class="stat-row"><span>Ability:</span><span>Channeled</span></div>
+                            <div class="stat-row"><span>Damage Type:</span><span>Magical</span></div>
+                            <div class="stat-row"><span>Pierces Debuff Immunity:</span><span>No</span></div>
+                            <div class="stat-row"><span>Radius:</span><span>810</span></div>
+                            <div class="stat-row"><span>Explosion Radius:</span><span>320</span></div>
+                            <div class="stat-row"><span>Movement Slow:</span><span>40%</span></div>
+                            <div class="stat-row"><span>Attack Slow:</span><span>80 / 120 / 160</span></div>
+                            <div class="stat-row"><span>Damage:</span><span>110 / 180 / 250</span></div>
+                            <div class="stat-row"><span>Cooldown:</span><span>100 / 95 / 90</span></div>
+                            <div class="stat-row"><span>Mana Cost:</span><span>200 / 400 / 600</span></div>
+                        </div>
+                    </div>
+
+                    <div class="ability-notes">
+                        <div class="ability-notes-toggle">
+                            <button data-target="R">Additional Notes</button>
+                        </div>
+
+                        <ul class="note-group" id="R">
+                            <li>
+                                The slow is applied on all enemies in the radius, even if
+                                they aren't hit by an explosion (lasts 1 second).
+                            </li>
+                            <li>
+                                Explosions occur every 0.1 seconds.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="ability-block">
+                    <div class="ability-title">
+                        <img src="../../assets/image/hero/cm/innate.png" alt="Blueheart Floe">
+                        <h2>Blueheart Floe</h2>
+                    </div>
+
+                    <div class="ability-text">
+                        <p>
+                        Crystal Maiden has 25% / 50% / 75% / 100% Mana Regeneration
+                        Amplification.
+                        </p>
+                    </div>
+
+                    <div class="ability-stats">
+                        <div class="stat-group">
+                            <div class="stat-row"><span>Levels With:</span><span>Freezing Field</span></div>
+                            <div class="stat-row"><span>Breakable:</span><span>Yes</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ability-block">
+                    <div class="ability-title">
+                        <img src="../../assets/image/hero/cm/talents.png" alt="Talents">
+                        <h2>Talents</h2>
+                    </div>
+
+                    <div class="ability-talent-table">
+                        <div class="talent-row">
+                            <span class="talent-item">+300 Crystal Nova Damage</span>
+                            <span class="talent-level">25</span>
+                            <span class="talent-item">+1s Frostbite Duration</span>
+                        </div>
+                        <div class="talent-row">
+                            <span class="talent-item">+50 Freezing Field Damage</span>
+                            <span class="talent-level">20</span>
+                            <span class="talent-item">+225 Attack Speed</span>
+                        </div>
+                        <div class="talent-row">
+                            <span class="talent-item">-4.5s Crystal Nova Cooldown</span>
+                            <span class="talent-level">15</span>
+                            <span class="talent-item">+100 Frostbite Cast Range</span>
+                        </div>
+                        <div class="talent-row">
+                            <span class="talent-item">+12 Intelligence</span>
+                            <span class="talent-level">10</span>
+                            <span class="talent-item">+200 Health</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ability-block">
+                    <div class="ability-title">
+                        <img src="../../assets/image/hero/cm/aghanim.png" alt="Aghanim's Scepter">
+                        <img src="../../assets/image/hero/cm/cmR.png" alt="Freezing Field">
+                        <h2>Ability Upgrade - Freezing Field</h2>
+                    </div>
+
+                    <div class="ability-text">
+                        <p>
+                        Allows you to move, cast and attack during Freezing Field. Can still
+                        be interrupted by enemies. You move 75% slower during this. Increases
+                        total number of explosions by 20%. Applies Frostbite to any unit that
+                        has been standing in the Freezing Field for over 2s.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ability-block">
+                    <div class="ability-title">
+                        <img src="../../assets/image/hero/cm/aghanim.png" alt="Aghanim's Shard">
+                        <img src="../../assets/image/hero/cm/cmD.png" alt="Crystal Clone">
+                        <h2>New Ability - Crystal Clone</h2>
+                    </div>
+
+                    <div class="ability-text">
+                        <p>
+                        Slides in a direction, creating a crystal clone of herself in her
+                        place and disjointing incoming projectiles. If the clone takes
+                        enough damage or times out, it shatters, Frostbiting enemies in
+                        450 AoE around its place. The Clone can also be destroyed by
+                        Crystal Maiden's own spells.
+                        </p>
+                    </div>
+
+                    <div class="ability-stats">
+                        <div class="stat-group">
+                            <div class="stat-row"><span>Ability:</span><span>Point Target</span></div>
+                            <div class="stat-row"><span>Pierces Debuff Immunity:</span><span>No</span></div>
+                            <div class="stat-row"><span>Distance:</span><span>275</span></div>
+                            <div class="stat-row"><span>Clone Duration:</span><span>5</span></div>
+                            <div class="stat-row"><span>Clone Health:</span><span>150</span></div>
+                            <div class="stat-row"><span>Cooldown:</span><span>10</span></div>
+                            <div class="stat-row"><span>Mana Cost:</span><span>150</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="../../scripts/hero-notes-toggle.js"></script>
+    </body>
+</html>
