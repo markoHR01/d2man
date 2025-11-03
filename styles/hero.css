@@ -118,6 +118,8 @@ video {
 .ability-text {
     color: #ccc;
     line-height: 1.5;
+
+    margin-bottom: 14px;
 }
 
 .ability-stats {
