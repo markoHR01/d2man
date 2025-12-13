@@ -123,3 +123,18 @@ main {
 .item-text p {
     margin: 15px 0;
 }
+
+.item-build {
+    display: flex;
+    justify-content: center;
+
+    background: #151515;
+    border-radius: 10px;
+
+    padding: 30px 0px;
+    gap: 30px;
+}
+
+.item-build img {
+    border-radius: 10px;
+}
