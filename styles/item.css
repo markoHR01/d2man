@@ -138,3 +138,49 @@ main {
 .item-build img {
     border-radius: 10px;
 }
+
+.item-notes {
+    margin-top: 20px;
+}
+
+.item-notes-toggle {
+    display: flex;
+    justify-content: center;
+}
+
+.item-notes-toggle button {
+    color: #e0e0e0;
+    font-size: 16px;
+
+    background: none;
+    border: none;
+
+    padding: 10px 100px;
+}
+
+.item-notes-toggle button:hover {
+    background-color: #1a1a1a;
+}
+
+.note-group {
+    max-height: 0;
+    opacity: 0;
+
+    transition:
+        max-height  0.3s,
+        opacity     0.3s,
+        padding     0.3s;
+}
+
+.note-group.visible {
+    max-height: 2000px;
+    opacity: 1;
+
+    padding: 10px 0;
+}
+
+.note-group li {
+    list-style-position: outside;
+
+    margin: 10px 15px;
+}

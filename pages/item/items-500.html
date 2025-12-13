@@ -129,6 +129,38 @@
 
                 <div class="item-box">
                     <div class="item-name">
+                        <img src="../../assets/image/item/iron_branch.png" alt="Iron Branch">
+                        <h2>Iron Branch</h2>
+                    </div>
+
+                    <div class="item-stats">
+                        <div class="stat-row"><span>Found In:</span><span>Home Shop</span></div>
+                        <div class="stat-row"><span>Cost:</span><span>50G</span></div>
+                    </div>
+
+                    <div class="item-stats">
+                        <div class="stat-row"><span>Ability:</span><span>Point Target</span></div>
+                    </div>
+
+                    <div class="item-stats">
+                        <div class="stat-row"><span>All Atributes:</span><span>+ 1</span></div>
+                    </div>
+
+                    <div class="item-text">
+                        <h3>Use: Plant Tree</h3>
+                        <p>
+                        Target the ground to plant a happy little tree that lasts for 20
+                        seconds.
+                        </p>
+                    </div>
+
+                    <div class="item-stats">
+                        <div class="stat-row"><span>Range:</span><span>400</span></div>
+                    </div>
+                </div>
+
+                <div class="item-box">
+                    <div class="item-name">
                         <img src="../../assets/image/item/smoke_of_deceit.png" alt="Smoke Of Deceit">
                         <h2>Smoke Of Deceit</h2>
                     </div>
@@ -197,6 +229,18 @@
 
                     <div class="item-stats">
                         <div class="stat-row"><span>Range:</span><span>400</span></div>
+                    </div>
+
+                    <div class="item-notes">
+                        <div class="item-notes-toggle">
+                            <button data-target="EM65">Additional Notes</button>
+                        </div>
+
+                        <ul class="note-group" id="EM65">
+                            <li>
+                                Hold Control to use on a nearby allied hero.
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
@@ -302,7 +346,94 @@
                         <div class="stat-row"><span>Range:</span><span>165</span></div>
                     </div>
                 </div>
+
+                <div class="item-box">
+                    <div class="item-name">
+                        <img src="../../assets/image/item/healing_salve.png" alt="Healing Salve">
+                        <h2>Healing Salve</h2>
+                    </div>
+
+                    <div class="item-stats">
+                        <div class="stat-row"><span>Found In:</span><span>Home Shop</span></div>
+                        <div class="stat-row"><span>Cost:</span><span>100G</span></div>
+                    </div>
+
+                    <div class="item-stats">
+                        <div class="stat-row"><span>Ability:</span><span>Unit Target</span></div>
+                        <div class="stat-row"><span>Affects:</span><span>Allied Heroes</span></div>
+                        <div class="stat-row"><span>Dispellable:</span><span>Yes</span></div>
+                    </div>
+
+                    <div class="item-text">
+                        <h3>Use: Salve</h3>
+                        <p>
+                        Grants 30 health regeneration to the target for 13 seconds.
+                        </p>
+                        <p>
+                        If the unit is attacked by an enemy hero or Roshan, the effect
+                        is lost.
+                        </p>
+                        <p>
+                        Heals for half the amount when cast on an ally.
+                        </p>
+                    </div>
+
+                    <div class="item-stats">
+                        <div class="stat-row"><span>Range:</span><span>250</span></div>
+                    </div>
+                </div>
+
+                <div class="item-box">
+                    <div class="item-name">
+                        <img src="../../assets/image/item/quelling_blade.png" alt="Quelling Blade">
+                        <h2>Quelling Blade</h2>
+                    </div>
+
+                    <div class="item-stats">
+                        <div class="stat-row"><span>Found In:</span><span>Home Shop</span></div>
+                        <div class="stat-row"><span>Cost:</span><span>100G</span></div>
+                    </div>
+
+                    <div class="item-stats">
+                        <div class="stat-row"><span>Ability:</span><span>Unit Target</span></div>
+                        <div class="stat-row"><span>Affects:</span><span>Trees</span></div>
+                    </div>
+
+                    <div class="item-text">
+                        <h3>Active: Chop Tree</h3>
+                        <p>
+                        Destroy a target tree.
+                        </p>
+                    </div>
+
+                    <div class="item-stats">
+                        <div class="stat-row"><span>Cooldown:</span><span>4</span></div>
+                        <div class="stat-row"><span>Range:</span><span>350</span></div>
+                    </div>
+
+                    <div class="item-text">
+                        <h3>Passive: Quell</h3>
+                        <p>
+                        Increases attack damage against non-hero units by 8 for melee
+                        heroes, and 4 for ranged.
+                        </p>
+                    </div>
+
+                    <div class="item-notes">
+                        <div class="item-notes-toggle">
+                            <button data-target="QB100">Additional Notes</button>
+                        </div>
+
+                        <ul class="note-group" id="QB100">
+                            <li>
+                                Effects of multiple quelling blades do not stack.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </main>
+
+        <script src="../../scripts/item-notes-toggle.js"></script>
     </body>
 </html>
