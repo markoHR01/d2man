@@ -75,6 +75,15 @@ main {
     gap: 30px;
 }
 
+.item-tier-hr {
+    display: block;
+
+    border: 1px solid #444;
+
+    margin: 20px 225px;
+    width: 100%;
+}
+
 .item-box {
     width: 500px;
 
